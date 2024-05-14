@@ -3,8 +3,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #fff; /* Change text color to white for better contrast */
+    background-color: #2e004d; /* Dark purple background color */
 }
 
 header, nav, section, footer {
@@ -34,26 +34,26 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #ff6600; /* Orange color for links */
     font-weight: bold;
     transition: color 0.3s;
 }
 
 a:hover, nav ul li a:hover {
     text-decoration: underline;
-    color: #555;
+    color: #ffaa00; /* Lighter orange on hover */
 }
 
 h1, h2 {
-    color: #333;
+    color: #ffaa00; /* Lighter orange for headings */
 }
 
 section {
-    background: #fff;
+    background: #4b0082; /* Darker purple for sections */
     margin: 5px 0;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #333; /* Dark shadow for sections */
     transition: transform 0.3s ease-in-out;
 }
 
@@ -64,8 +64,8 @@ section:hover {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #333;
-    color: white;
+    background-color: #4b0082; /* Darker purple for footer */
+    color: #fff;
 }
 
 /* Smooth scrolling */
