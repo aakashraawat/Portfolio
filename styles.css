@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #ffffff; /* White background color */
     color: #000000; /* Black text color */
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 header {
@@ -11,6 +12,9 @@ header {
     color: #000000;
     padding: 20px 0;
     border-bottom: 1px solid #e0e0e0;
+    position: sticky; /* Make header sticky */
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-container {
@@ -50,12 +54,14 @@ nav ul li a:hover {
     background: url('https://as1.ftcdn.net/v2/jpg/04/10/03/92/1000_F_410039266_L3d9dyCjPw8zPq7eUarFvvLp2PWVZAEk.jpg') no-repeat center center/cover;
     color: #ffffff;
     text-align: center;
-    padding: 100px 20px;
+    padding: 150px 20px; /* Adjusted padding to accommodate fixed header */
+    margin-top: 60px; /* To offset the fixed header height */
 }
 
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
+    animation: fadeIn 2s ease-in-out; /* Fade-in effect */
 }
 
 .hero h1 {
@@ -89,6 +95,7 @@ main .container {
 
 .tab-content {
     display: none;
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect for tabs */
 }
 
 .tab-content.active {
@@ -109,10 +116,38 @@ ul {
     padding-left: 20px;
 }
 
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px 0 0 5px;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
 footer {
     background: #f8f8f8; /* Light grey background color */
     color: #000000;
     text-align: center;
     padding: 20px 0;
     border-top: 1px solid #e0e0e0;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
