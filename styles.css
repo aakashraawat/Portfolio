@@ -3,18 +3,16 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #2e004d; /* Dark purple background color */
-    color: #fff; /* White text color */
+    background-color: #ffffff; /* White background color */
+    color: #000000; /* Black text color */
 }
 
 header {
-    background: #ff6600; /* Orange color */
-    color: #fff;
+    background: #f8f8f8; /* Light grey background color */
+    color: #000000;
     padding: 20px;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 header .container {
@@ -32,16 +30,6 @@ header p {
     margin: 5px 0;
 }
 
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.5em;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -53,13 +41,13 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffaa00; /* Lighter orange on hover */
+    color: #007bff; /* Blue color on hover */
 }
 
 main .container {
@@ -68,27 +56,21 @@ main .container {
     padding: 20px;
 }
 
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
 section {
     margin-bottom: 30px;
 }
 
 h2 {
-    color: #ffaa00; /* Lighter orange for headings */
     font-size: 2em;
     margin-bottom: 10px;
-}
-
-.expandable {
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-.details {
-    display: none;
-    background: #4b0082; /* Darker purple for details */
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #333;
 }
 
 ul {
@@ -97,11 +79,11 @@ ul {
 }
 
 footer {
-    background: #4b0082; /* Darker purple for footer */
-    color: #fff;
+    background: #f8f8f8; /* Light grey background color */
+    color: #000000;
     text-align: center;
     padding: 20px;
-    margin-top: 30px;
+    border-top: 1px solid #e0e0e0;
 }
 
 footer .container {
@@ -109,21 +91,4 @@ footer .container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-    
-    nav ul {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    
-    nav ul.show {
-        display: flex;
-    }
 }
