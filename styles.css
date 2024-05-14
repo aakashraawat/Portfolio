@@ -146,6 +146,29 @@ footer {
     border-top: 1px solid #e0e0e0;
 }
 
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-image img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Keyframes for fade-in effect */
 @keyframes fadeIn {
     from { opacity: 0; }
