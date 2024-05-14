@@ -158,14 +158,12 @@ footer {
 }
 
 .contact-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+    flex: 0 0 200px; /* Adjusted size */
 }
 
 .contact-image img {
     border-radius: 50%;
-    max-width: 100%;
+    width: 100%; /* Ensure the image fits the container */
     height: auto;
 }
 
