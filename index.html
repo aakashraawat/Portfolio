@@ -9,110 +9,130 @@
 </head>
 <body>
     <header>
-        <h1>Aakash Rawat</h1>
-        <p>Mechatronics Engineering Student | Passionate about Robotics and Automation</p>
-        <button onclick="toggleMenu()">Menu</button>
+        <div class="container">
+            <h1>Aakash Rawat</h1>
+            <p>Mechatronics Engineering Student | Passionate about Robotics and Automation</p>
+            <nav>
+                <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a tech-savvy and solution-oriented Mechatronics Engineering Student with a strong understanding of robotics, production, automated cars, and electronic drives. I am curious, empathetic, and innovative at heart, always ready to tackle challenges with technology.</p>
-    </section>
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <div class="expandable" data-target="siemens-details">
-            <h3>Siemens Digital Software Industries, Leuven, Belgium (03/2024 - Present)</h3>
-        </div>
-        <div id="siemens-details" style="display:none;">
-            <ul>
-                <li>Development of Unity models for VR based on Prescan maps</li>
-                <li>Connection of scenario generation from Prescan to Unity</li>
-                <li>Animation of other actors in VR driving simulator</li>
-            </ul>
-        </div>
-        <div class="expandable" data-target="zf-details">
-            <h3>ZF Group, Friedrichshafen (03/2023 - 09/2023)</h3>
-        </div>
-        <div id="zf-details" style="display:none;">
-            <ul>
-                <li>Conducted comprehensive investigations and benchmarks on cobots, AGV/AMR technology, vision systems, and associated accessories</li>
-                <li>Supported in the development of applications and mock-ups, including device and gripper design, and programming functionalities</li>
-                <li>Utilized additive manufacturing techniques to develop and manufacture components</li>
-            </ul>
-        </div>
-    </section>
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Technical University of Applied Sciences Würzburg-Schweinfurt:</strong></p>
-        <ul>
-            <li>Robotics & Production</li>
-            <li>Automated Systems & Human-Machine Interaction</li>
-            <li>Simulation of Mechatronics Systems</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>Key Projects</h2>
-        <div class="expandable" data-target="motors-details">
-            <h3>Automating Manufacturing of E-Motors (03/2023 - 05/2023)</h3>
-        </div>
-        <div id="motors-details" style="display:none;">
-            <ul>
-                <li>Led the automation of manufacturing processes using cobots for hairpins and magnets insertion in stator and rotor</li>
-                <li>Designed gripper fingers and programmed cobots</li>
-            </ul>
-        </div>
-        <div class="expandable" data-target="modulation-details">
-            <h3>Redesign of the Test Setup for Pulse-Amplitude Modulation (05/2022 - 07/2022)</h3>
-        </div>
-        <div id="modulation-details" style="display:none;">
-            <ul>
-                <li>Led a team project to redesign and simulate a new electronic circuit using Multisim</li>
-                <li>Designed case, circuit, and PCB, and produced new test environments</li>
-            </ul>
-        </div>
-    </section>
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>RoboDK</li>
-            <li>Python</li>
-            <li>Node.js</li>
-            <li>ROS</li>
-            <li>MATLAB (Simulink)</li>
-            <li>Solidworks</li>
-            <li>Power BI</li>
-            <li>Git</li>
-            <li>Unreal Engine 4.22</li>
-            <li>C++</li>
-        </ul>
-    </section>
-    <section id="certificates">
-        <h2>Certificates</h2>
-        <ul>
-            <li>Sponsorship-Linked Marketing</li>
-            <li>Public Speaking - Central Board of Secondary Education</li>
-            <li>ILETS</li>
-            <li>Goethe-Zertifikat A1</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>Email: <a href="mailto:aakashraawat@icloud.com">aakashraawat@icloud.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/aakash-rawat-70334822b">Profile</a></p>
-        <p>GitHub: <a href="https://github.com/aakashraawat">aakashraawat</a></p>
-    </section>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I am a tech-savvy and solution-oriented Mechatronics Engineering Student with a strong understanding of robotics, production, automated cars, and electronic drives. I am curious, empathetic, and innovative at heart, always ready to tackle challenges with technology.</p>
+            </div>
+        </section>
+        <section id="experience">
+            <div class="container">
+                <h2>Professional Experience</h2>
+                <div class="expandable" data-target="siemens-details">
+                    <h3>Siemens Digital Software Industries, Leuven, Belgium (03/2024 - Present)</h3>
+                </div>
+                <div id="siemens-details" class="details">
+                    <ul>
+                        <li>Development of Unity models for VR based on Prescan maps</li>
+                        <li>Connection of scenario generation from Prescan to Unity</li>
+                        <li>Animation of other actors in VR driving simulator</li>
+                    </ul>
+                </div>
+                <div class="expandable" data-target="zf-details">
+                    <h3>ZF Group, Friedrichshafen (03/2023 - 09/2023)</h3>
+                </div>
+                <div id="zf-details" class="details">
+                    <ul>
+                        <li>Conducted comprehensive investigations and benchmarks on cobots, AGV/AMR technology, vision systems, and associated accessories</li>
+                        <li>Supported in the development of applications and mock-ups, including device and gripper design, and programming functionalities</li>
+                        <li>Utilized additive manufacturing techniques to develop and manufacture components</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="education">
+            <div class="container">
+                <h2>Education</h2>
+                <p><strong>Technical University of Applied Sciences Würzburg-Schweinfurt:</strong></p>
+                <ul>
+                    <li>Robotics & Production</li>
+                    <li>Automated Systems & Human-Machine Interaction</li>
+                    <li>Simulation of Mechatronics Systems</li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <h2>Key Projects</h2>
+                <div class="expandable" data-target="motors-details">
+                    <h3>Automating Manufacturing of E-Motors (03/2023 - 05/2023)</h3>
+                </div>
+                <div id="motors-details" class="details">
+                    <ul>
+                        <li>Led the automation of manufacturing processes using cobots for hairpins and magnets insertion in stator and rotor</li>
+                        <li>Designed gripper fingers and programmed cobots</li>
+                    </ul>
+                </div>
+                <div class="expandable" data-target="modulation-details">
+                    <h3>Redesign of the Test Setup for Pulse-Amplitude Modulation (05/2022 - 07/2022)</h3>
+                </div>
+                <div id="modulation-details" class="details">
+                    <ul>
+                        <li>Led a team project to redesign and simulate a new electronic circuit using Multisim</li>
+                        <li>Designed case, circuit, and PCB, and produced new test environments</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>RoboDK</li>
+                    <li>Python</li>
+                    <li>Node.js</li>
+                    <li>ROS</li>
+                    <li>MATLAB (Simulink)</li>
+                    <li>Solidworks</li>
+                    <li>Power BI</li>
+                    <li>Git</li>
+                    <li>Unreal Engine 4.22</li>
+                    <li>C++</li>
+                </ul>
+            </div>
+        </section>
+        <section id="certificates">
+            <div class="container">
+                <h2>Certificates</h2>
+                <ul>
+                    <li>Sponsorship-Linked Marketing</li>
+                    <li>Public Speaking - Central Board of Secondary Education</li>
+                    <li>ILETS</li>
+                    <li>Goethe-Zertifikat A1</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Information</h2>
+                <p>Email: <a href="mailto:aakashraawat@icloud.com">aakashraawat@icloud.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/aakash-rawat-70334822b">Profile</a></p>
+                <p>GitHub: <a href="https://github.com/aakashraawat">aakashraawat</a></p>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>© 2024 Aakash Rawat. All rights reserved.</p>
+        <div class="container">
+            <p>© 2024 Aakash Rawat. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
