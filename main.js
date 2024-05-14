@@ -1,21 +1,23 @@
-// JavaScript for responsive toggle menu for smaller screens
-function toggleMenu() {
-    const menu = document.querySelector('nav ul');
-    menu.classList.toggle('show');
-}
-
-// Toggle display of detailed content
-function toggleDetails(id) {
-    var content = document.getElementById(id);
-    content.classList.toggle('show');
-}
-
-// Add event listeners after the document has loaded
 document.addEventListener('DOMContentLoaded', function() {
-    var expandableSections = document.querySelectorAll('.expandable');
-    expandableSections.forEach(section => {
-        section.addEventListener('click', function() {
-            toggleDetails(this.dataset.target);
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            // Remove active class from all tabs
+            navLinks.forEach(link => link.classList.remove('active'));
+            tabContents.forEach(tab => tab.classList.remove('active'));
+
+            // Add active class to clicked tab and corresponding content
+            link.classList.add('active');
+            const target = document.querySelector(link.getAttribute('href'));
+            target.classList.add('active');
         });
     });
+
+    // Show the first tab by default
+    navLinks[0].classList.add('active');
+    tabContents[0].classList.add('active');
 });
