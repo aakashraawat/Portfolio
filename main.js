@@ -21,3 +21,4 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks[0].classList.add('active');
     tabContents[0].classList.add('active');
 });
+//aas
