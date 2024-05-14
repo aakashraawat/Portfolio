@@ -47,7 +47,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background: url('https://wallpapercave.com/wp/wp6819196.jpg') no-repeat center center/cover;
+    background: url('https://as1.ftcdn.net/v2/jpg/04/10/03/92/1000_F_410039266_L3d9dyCjPw8zPq7eUarFvvLp2PWVZAEk.jpg') no-repeat center center/cover;
     color: #ffffff;
     text-align: center;
     padding: 100px 20px;
@@ -85,6 +85,14 @@ main .container {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
 }
 
 section {
